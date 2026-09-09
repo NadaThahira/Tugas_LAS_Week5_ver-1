@@ -215,6 +215,25 @@ st.markdown(
         font-size: 0.76rem; padding: 0.12rem 0.6rem; border-radius: 20px; margin-right: 0.5rem;
     }
     .version-date { color: #6B7A63; font-size: 0.8rem; }
+
+    /* Paksa semua teks native Streamlit ikut warna tema ini, jangan ikut dark-mode bawaan browser/Streamlit */
+    .stApp, .stApp p, .stApp span, .stApp label, .stMarkdown, .stCaption, [data-testid="stCaptionContainer"] {
+        color: #22301C !important;
+    }
+    [data-testid="stFileUploaderDropzone"] {
+        background: #FFFFFF !important; border: 2px dashed #DDE5CE !important; border-radius: 12px !important;
+    }
+    [data-testid="stFileUploaderDropzone"] * { color: #22301C !important; }
+    [data-testid="stFileUploaderDropzone"] button {
+        background: #2F4B32 !important; color: #F2F5EC !important; border: none !important;
+    }
+    .stButton button, .stDownloadButton button {
+        background: #2F4B32 !important; color: #F2F5EC !important;
+        border: none !important; border-radius: 10px !important;
+    }
+    [data-testid="stExpander"] { background: #FFFFFF !important; border: 1px solid #DDE5CE !important; border-radius: 12px !important; }
+    [data-testid="stExpander"] summary, [data-testid="stExpander"] summary * { color: #22301C !important; }
+    [data-testid="stExpander"] p, [data-testid="stExpander"] li, [data-testid="stExpander"] span { color: #22301C !important; }
     </style>
     """,
     unsafe_allow_html=True,
