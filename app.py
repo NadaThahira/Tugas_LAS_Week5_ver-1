@@ -1,5 +1,5 @@
 """
-TomeLeaf Dx — Diagnosa Penyakit Daun Tomat
+TomaLeaf Dx — Diagnosa Penyakit Daun Tomat
 Deployment model: CNN Custom
 Nada Thahira Sosa — 2601 — MBC Lab Week 5
 """
@@ -13,7 +13,7 @@ import tensorflow as tf
 # KONFIGURASI HALAMAN
 # ----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="TomeLeaf Dx — Diagnosa Daun Tomat",
+    page_title="TomaLeaf Dx — Diagnosa Daun Tomat",
     page_icon="🍅",
     layout="centered",
     initial_sidebar_state="collapsed",
@@ -248,7 +248,7 @@ st.markdown(
     """
     <div class="hero">
         <div style="font-size:2.2rem;">🍅</div>
-        <div class="hero-title">TomeLeaf Dx</div>
+        <div class="hero-title">TomaLeaf Dx</div>
         <div class="hero-sub">Foto daun tomatmu, sistem langsung mendeteksi apakah sehat atau
         terkena salah satu dari 9 penyakit umum.</div>
     </div>
@@ -354,4 +354,4 @@ with st.expander("📖 Daftar penyakit yang bisa dikenali"):
             unsafe_allow_html=True,
         )
 
-st.caption("TomeLeaf Dx · Model: CNN Custom · Nada Thahira Sosa — 2601 · MBC Lab Week 5")
+st.caption("TomaLeaf Dx · Model: CNN Custom · Nada Thahira Sosa — 2601 · MBC Lab Week 5")
