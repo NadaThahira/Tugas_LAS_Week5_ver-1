@@ -1,7 +1,7 @@
 """
 TomeLeaf Dx — Diagnosa Penyakit Daun Tomat
 Deployment model: CNN Custom
-Nada Thahira Sosa — 2601 — MBC Lab Week 2
+Nada Thahira Sosa — 2601 — MBC Lab Week 5
 """
 
 import numpy as np
@@ -392,4 +392,4 @@ with st.expander("🕓 Riwayat versi aplikasi"):
             unsafe_allow_html=True,
         )
 
-st.caption("TomeLeaf Dx · Model: CNN Custom · Nada Thahira Sosa — 2601 · MBC Lab Week 2")
+st.caption("TomeLeaf Dx · Model: CNN Custom · Nada Thahira Sosa — 2601 · MBC Lab Week 5")
