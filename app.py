@@ -115,23 +115,6 @@ SEVERITY_COLOR = {
     "berat": "#B33A3A",
 }
 
-VERSION_LOG = [
-    {
-        "versi": "v1.0",
-        "tanggal": "2026-08-25",
-        "perubahan": "Rilis awal: upload gambar, pilih model, tampilkan kelas prediksi & skor confidence dalam bentuk teks.",
-    },
-    {
-        "versi": "v2.0",
-        "tanggal": "2026-08-29",
-        "perubahan": "Tambah mode bandingkan 2 model side-by-side, bar chart confidence per kelas, kartu info penyakit berwarna.",
-    },
-    {
-        "versi": "v3.0 (final)",
-        "tanggal": "2026-09-08",
-        "perubahan": "Sederhanakan jadi 1 model (CNN Custom) dan alur single-page 3 langkah (Upload → Proses → Hasil) supaya lebih mudah dipakai orang awam.",
-    },
-]
 
 # ----------------------------------------------------------------------------
 # STYLING
@@ -208,13 +191,6 @@ st.markdown(
     .barrow-track { flex: 1; background: #E5EADA; border-radius: 6px; height: 9px; overflow: hidden; }
     .barrow-fill { height: 100%; border-radius: 6px; }
     .barrow-pct { width: 44px; text-align: right; font-size: 0.78rem; color: #2B3A28; }
-
-    .version-row { border-left: 3px solid #4F7A3D; padding: 0.2rem 0 0.2rem 1rem; margin-bottom: 1rem; }
-    .version-tag {
-        display: inline-block; background: #2F4B32; color: #F2F5EC;
-        font-size: 0.76rem; padding: 0.12rem 0.6rem; border-radius: 20px; margin-right: 0.5rem;
-    }
-    .version-date { color: #6B7A63; font-size: 0.8rem; }
 
     /* Paksa semua teks native Streamlit ikut warna tema ini, jangan ikut dark-mode bawaan browser/Streamlit */
     .stApp, .stApp p, .stApp span, .stApp label, .stMarkdown, .stCaption, [data-testid="stCaptionContainer"] {
@@ -373,20 +349,6 @@ with st.expander("📖 Daftar penyakit yang bisa dikenali"):
             <div class="card" style="border-left:4px solid {color}; margin-bottom:0.6rem;">
                 <b>{info['nama']}</b>
                 <span style="font-size:0.72rem; color:{color}; font-weight:600;"> · {info['tingkat'].upper()}</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
-with st.expander("🕓 Riwayat versi aplikasi"):
-    st.caption("Tambahkan screenshot versi sebelumnya di folder `docs/screenshots/` lalu tampilkan dengan `st.image()` di sini.")
-    for v in VERSION_LOG:
-        st.markdown(
-            f"""
-            <div class="version-row">
-                <span class="version-tag">{v['versi']}</span>
-                <span class="version-date">{v['tanggal']}</span>
-                <p style="margin:0.3rem 0 0 0;">{v['perubahan']}</p>
             </div>
             """,
             unsafe_allow_html=True,
