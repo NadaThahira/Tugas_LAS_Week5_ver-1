@@ -274,7 +274,7 @@ st.markdown(
         <div style="font-size:2.2rem;">🍅</div>
         <div class="hero-title">TomeLeaf Dx</div>
         <div class="hero-sub">Foto daun tomatmu, sistem langsung mendeteksi apakah sehat atau
-        terkena salah satu dari 9 penyakit umum — lengkap dengan saran penanganannya.</div>
+        terkena salah satu dari 9 penyakit umum.</div>
     </div>
     """,
     unsafe_allow_html=True,
