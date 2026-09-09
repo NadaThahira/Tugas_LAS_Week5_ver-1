@@ -291,7 +291,7 @@ else:
 
     col_img, col_gap = st.columns([1, 0.001])
     with col_img:
-        st.image(image, use_container_width=True, caption="Foto yang kamu unggah")
+        st.image(image, use_column_width=True, caption="Foto yang kamu unggah")
 
     with st.spinner("Sedang menganalisis daun..."):
         probs = predict(image)
